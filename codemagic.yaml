@@ -1,6 +1,3 @@
-# Automatically generated on 2022-10-09 UTC from https://codemagic.io/app/634244de720e3caef7ac4c6a/settings
-# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
-
 workflows:
   default-workflow:
     triggering:
@@ -34,7 +31,7 @@ workflows:
       - '*.snap'
       - build/windows/**/*.msix
       - flutter_drive.log
-      - app/build/outputs/**/**/*.apk
+      - build/outputs/**/**/*.apk
     publishing:
       email:
         recipients:
