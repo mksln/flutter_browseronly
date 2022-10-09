@@ -25,11 +25,15 @@ workflows:
         flutter build web --release
         cd build/web
         7z a -r ../web.zip ./*
+      - name: Build Android APK
+        working_directory: android
+        script: ./gradlew assembleRelease  
     artifacts:
       - build/web.zip
       - '*.snap'
       - build/windows/**/*.msix
       - flutter_drive.log
+      - app/build/outputs/**/**/*.apk
     publishing:
       email:
         recipients:
