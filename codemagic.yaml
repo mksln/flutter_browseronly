@@ -31,7 +31,7 @@ workflows:
       - '*.snap'
       - build/windows/**/*.msix
       - flutter_drive.log
-      - build/outputs/**/**/*.apk
+      - build/app/outputs/**/**/*.apk
     publishing:
       email:
         recipients:
